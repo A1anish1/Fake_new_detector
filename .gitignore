@@ -15,11 +15,6 @@ __pycache__/
 # Data folder (raw datasets)
 data/
 
-# Large temporary files
-*.csv
-*.xlsx
-*.zip
-
 # OS files
 .DS_Store
 Thumbs.db
@@ -28,8 +23,28 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Streamlit cache
-.streamlit/
+# Streamlit local cache & secrets
+.streamlit/secrets.toml
+.streamlit/cache/
+.streamlit/state/
 
 # Logs
 *.log
+
+# Testing, type-checking, tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+
+# Build artifacts
+build/
+dist/
+
+# Local environment files
+.env
+.env.*
+
+# Trae IDE workspace files
+.trae/
